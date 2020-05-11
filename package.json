@@ -1,0 +1,25 @@
+{
+  "name": "node_two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "await": "^0.2.6",
+    "body-parser": "latest",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/express-handlebars": "^0.0.33",
+    "bcrypt": "^4.0.1",
+    "mongodb": "^3.5.7"
+  }
+}
