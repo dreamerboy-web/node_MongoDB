@@ -1,11 +1,12 @@
 const express = require('express'), exhbs = require('express-handlebars'), path = require('path');
 const MongoClient = require("mongodb").MongoClient;
+const cors = require('cors')
+const app = express();
+const bodyParser = require('body-parser');
 
 const url = "mongodb://localhost:27017/test";
 
-
-const app = express();
-const bodyParser     = require('body-parser');
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());

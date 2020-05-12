@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
 
 const userSchema = mongoose.Schema({
     name: {
@@ -10,7 +9,7 @@ const userSchema = mongoose.Schema({
         trim: true,
         unique: 1
     }
-});
+}, { versionKey: false });
 
 const User = mongoose.model('users', userSchema);
 
